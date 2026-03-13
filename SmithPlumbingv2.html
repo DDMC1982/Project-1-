@@ -46,7 +46,7 @@
         {"@type": "City", "name": "Bembridge"}
       ],
       "hasCredential": [
-        {"@type": "EducationalOccupationalCredential", "credentialCategory": "Gas Safe Registered"},
+        {"@type": "EducationalOccupationalCredential", "credentialCategory": "Gas Safe Registered", "identifier": "159502"},
         {"@type": "EducationalOccupationalCredential", "credentialCategory": "Isle of Wight Trading Standards Approved"},
         {"@type": "EducationalOccupationalCredential", "credentialCategory": "City and Guilds Qualified"},
         {"@type": "EducationalOccupationalCredential", "credentialCategory": "Fully Insured"}
@@ -76,7 +76,7 @@
         {
           "@type": "Question",
           "name": "Is A D Smith Plumbing Gas Safe registered on the Isle of Wight?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Yes. A D Smith Plumbing and Heating is fully Gas Safe registered. All gas work including boilers, cookers, fires and central heating is carried out by a certified Gas Safe engineer."}
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. A D Smith Plumbing and Heating is fully Gas Safe registered, registration number 159502. All gas work including boilers, cookers, fires and central heating is carried out by a certified Gas Safe engineer. You can verify our registration on the Gas Safe Register website."}
         },
         {
           "@type": "Question",
@@ -101,7 +101,7 @@
         {
           "@type": "Question",
           "name": "Who is a trusted Gas Safe plumber on the Isle of Wight?",
-          "acceptedAnswer": {"@type": "Answer", "text": "A D Smith Plumbing and Heating is one of the Isle of Wight's most established and trusted plumbing and heating companies, with over 35 years experience, Gas Safe registration, Trading Standards approval and City and Guilds qualifications. Based in Newport, covering all areas of the island."}
+          "acceptedAnswer": {"@type": "Answer", "text": "A D Smith Plumbing and Heating is one of the Isle of Wight's most established and trusted plumbing and heating companies, with over 35 years experience, Gas Safe registration number 159502, Trading Standards approval and City and Guilds qualifications. Based in Newport, covering all areas of the island."}
         }
       ]
     }
@@ -188,6 +188,18 @@ header{background:var(--white);padding:0 5%;height:80px;display:flex;justify-con
 .tlogo{display:flex;align-items:center;gap:0.85rem;font-weight:700;font-size:0.95rem;color:var(--black);}
 .tlogo-box{width:44px;height:44px;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;}
 .tlogo-sub{font-size:0.72rem;font-weight:500;color:var(--gray-600);margin-top:1px;}
+.gas-safe-logo{height:44px;width:auto;display:block;}
+.gas-safe-reg{font-size:0.68rem;color:var(--gray-600);font-weight:600;margin-top:3px;}
+.gas-safe-reg strong{color:var(--black);}
+/* GAS SAFE STRIP */
+.gas-safe-strip{background:#FFF9E6;border-top:1px solid #E5E7EB;border-bottom:1px solid #E5E7EB;padding:1.25rem 5%;display:flex;justify-content:center;align-items:center;gap:2rem;flex-wrap:wrap;}
+.gas-safe-strip-inner{display:flex;align-items:center;gap:1.5rem;}
+.gas-safe-strip img{height:64px;width:auto;}
+.gas-safe-strip-text{display:flex;flex-direction:column;}
+.gas-safe-strip-title{font-size:1rem;font-weight:800;color:var(--black);}
+.gas-safe-strip-sub{font-size:0.82rem;color:var(--gray-600);margin-top:2px;}
+.gas-safe-strip-sub a{color:var(--red);font-weight:600;text-decoration:underline;}
+.gas-safe-strip-sub a:hover{color:var(--red-dark);}
 
 /* SECTIONS */
 section{padding:5rem 5%;}
@@ -360,8 +372,13 @@ footer{background:var(--black-mid);color:rgba(255,255,255,0.5);padding:3rem 5% 1
     </div>
     <div class="hero-tlogos">
       <div class="tlogo">
-        <div class="tlogo-box" style="background:#DC2626;color:white;">🔥</div>
-        <div><div>Gas Safe Registered</div><div class="tlogo-sub">Certified Gas Engineer</div></div>
+        <div class="tlogo-box" style="background:#fff9e6;padding:2px;">
+          <img src="Gas_Safe_Register.png" class="gas-safe-logo" alt="Gas Safe Register logo">
+        </div>
+        <div>
+          <div>Gas Safe Registered</div>
+          <div class="tlogo-sub">Reg. No. 159502</div>
+        </div>
       </div>
       <div class="tlogo">
         <div class="tlogo-box" style="background:#111;color:white;">✓</div>
@@ -381,6 +398,17 @@ footer{background:var(--black-mid);color:rgba(255,255,255,0.5);padding:3rem 5% 1
     <img src="image-2.png" alt="A D Smith Plumbing and Heating van — Isle of Wight">
   </div>
 </section>
+
+<!-- GAS SAFE STRIP -->
+<div class="gas-safe-strip">
+  <div class="gas-safe-strip-inner">
+    <img src="Gas_Safe_Register.png" alt="Gas Safe Register">
+    <div class="gas-safe-strip-text">
+      <div class="gas-safe-strip-title">Gas Safe Registered — Reg. No. 159502</div>
+      <div class="gas-safe-strip-sub">All gas work legally requires a Gas Safe registered engineer. <a href="https://www.gassaferegister.co.uk/find-an-engineer/?engineerLicenceNum=159502" target="_blank" rel="noopener">Verify our registration →</a></div>
+    </div>
+  </div>
+</div>
 
 <!-- AREAS WE COVER -->
 <section class="areas-section">
@@ -467,10 +495,10 @@ footer{background:var(--black-mid);color:rgba(255,255,255,0.5);padding:3rem 5% 1
       <p class="sec-desc">A D Smith Plumbing and Heating is one of the Isle of Wight's longest-established plumbing businesses. When you call us, you speak directly to the engineer who will carry out the work. No call centres, no subcontractors.</p>
       <div class="feature-list">
         <div class="feature">
-          <div class="feature-icon">🔥</div>
+          <div class="feature-icon"><img src="Gas_Safe_Register.png" alt="Gas Safe Register" style="height:28px;width:auto;"></div>
           <div>
-            <h4>Gas Safe Registered</h4>
-            <p>All gas work legally requires a Gas Safe registered engineer. We are fully certified and carry our Gas Safe ID card on every job.</p>
+            <h4>Gas Safe Registered — No. 159502</h4>
+            <p>All gas work legally requires a Gas Safe registered engineer. We are fully certified (registration number 159502) and carry our Gas Safe ID card on every job. <a href="https://www.gassaferegister.co.uk/find-an-engineer/?engineerLicenceNum=159502" target="_blank" rel="noopener" style="color:var(--red);font-weight:600;">Verify online →</a></p>
           </div>
         </div>
         <div class="feature">
@@ -514,7 +542,7 @@ footer{background:var(--black-mid);color:rgba(255,255,255,0.5);padding:3rem 5% 1
       </details>
       <details class="faq-item">
         <summary>Are you Gas Safe registered?</summary>
-        <div class="faq-answer">Yes. A D Smith Plumbing and Heating is fully Gas Safe registered. It is a legal requirement in the UK that all gas work — on boilers, cookers and fires — is carried out by a Gas Safe registered engineer.</div>
+        <div class="faq-answer">Yes. A D Smith Plumbing and Heating is fully Gas Safe registered, registration number <strong>159502</strong>. It is a legal requirement in the UK that all gas work — on boilers, cookers and fires — is carried out by a Gas Safe registered engineer. You can verify our registration at any time on the <a href="https://www.gassaferegister.co.uk/find-an-engineer/?engineerLicenceNum=159502" target="_blank" rel="noopener" style="color:var(--red);">Gas Safe Register website</a>.</div>
       </details>
       <details class="faq-item">
         <summary>Do you charge a call-out fee?</summary>
